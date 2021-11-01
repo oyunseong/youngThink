@@ -40,25 +40,8 @@ class MainActivity : BaseActivity<ActivityMainBinding>({ ActivityMainBinding.inf
             override fun onFailure(call: Call<ChangePlzResponse?>, t: Throwable) {
                 Log.d("dartResponse", t.message.toString())
             }
-
         })
+
     }
 
-//    private fun initNavigation() {
-//        var navController = findNavController(R.id.main_nav_host)
-//        binding.mainBottomNavigation.setupWithNavController(navController)
-//        binding.mainBottomNavigation.itemIconTintList = null
-//
-//        navController.addOnDestinationChangedListener { _, destination, _ ->
-//            if (destination.id == R.id.HomeTapFragment ||
-//                destination.id == R.id.ValuationTapFragment ||
-//                destination.id == R.id.CommunityTapFragment ||
-//                destination.id == R.id.ProfileTapFragment
-//            ) {
-//                binding.mainBottomNavigation.visibility = View.VISIBLE
-//            } else {
-//                binding.mainBottomNavigation.visibility = View.GONE
-//            }
-//        }
-//    }
 }
