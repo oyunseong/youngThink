@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">youngThink</string>
+    <integer name="fade_in_time">400</integer>
+    <integer name="fade_out_time">400</integer>
     <integer name="screen_in_time">400</integer>
     <integer name="screen_out_time">400</integer>
 </resources>

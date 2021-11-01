@@ -1,11 +1,13 @@
 package com.youngthink.android.youngthink.base
 
+import android.app.Activity
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.viewbinding.ViewBinding
+import com.youngthink.android.youngthink.R
 
 abstract class BaseActivity<B: ViewBinding>(val bindingFactory: (LayoutInflater) -> B): AppCompatActivity(){
     private var _binding: B? =null
@@ -52,6 +54,12 @@ abstract class BaseActivity<B: ViewBinding>(val bindingFactory: (LayoutInflater)
     override fun onRestart() {
         super.onRestart()
         Log.d(tag, "++onRestart")
+    }
+    fun Activity.slideLeft(){
+        overridePendingTransition(R.anim.slide_in_top, R.anim.slide_out_top)
+    }
+    fun Activity.fadeAnim(){
+        overridePendingTransition(R.anim.fade_in, R.anim.fade_out)
     }
 
 

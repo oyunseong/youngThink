@@ -13,10 +13,9 @@ class SplashActivity : BaseActivity<ActivitySplashBinding>({ ActivitySplashBindi
         super.onCreate(savedInstanceState)
         Handler().postDelayed({
             startActivity(Intent(this, MainActivity::class.java))
-            overridePendingTransition(R.anim.fade_in, R.anim.fade_out)
+            fadeAnim()
+            overridePendingTransition(R.anim.nav_default_enter_anim, R.anim.nav_default_pop_exit_anim)
             finish()
-
-
         }, 800)
     }
 }
