@@ -8,10 +8,12 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import androidx.navigation.NavController
 import androidx.viewbinding.ViewBinding
 
 abstract class BaseFragment<B : ViewBinding> : Fragment() {
     private var _binding: B? = null
+    lateinit var navController : NavController
     val binding get() = _binding!!
     public val tag1: String = this::class.java.name
 

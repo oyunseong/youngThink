@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/HomeTapFragment"
+        android:title="home"
+        android:icon="@drawable/playingmococo"
+        />
+    <item
+        android:id="@+id/BTapFragment"
+        android:title="B프래그먼트"
+        android:icon="@drawable/playingmococo"
+        />
+    <item
+        android:id="@+id/CTapFragment"
+        android:title="C프래그먼트"
+        android:icon="@drawable/playingmococo"
+        />
+</menu>

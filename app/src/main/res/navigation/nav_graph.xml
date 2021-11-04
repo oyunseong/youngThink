@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@+id/HomeTapFragment"
+    >
+
+    <fragment
+        android:id="@+id/HomeTapFragment"
+        android:name="com.youngthink.android.youngthink.HomeTapFragment"
+        android:label="@string/HomeTapFragment"
+        tools:layout="@layout/fragment_home"
+        />
+
+    <fragment
+        android:id="@+id/BTapFragment"
+        android:name="com.youngthink.android.youngthink.BTapFragment"
+        android:label="@string/BTapFragment"
+        tools:layout="@layout/fragment_b"
+        />
+
+    <fragment
+        android:id="@+id/CTapFragment"
+        android:name="com.youngthink.android.youngthink.CTapFragment"
+        android:label="@string/CTapFragment"
+        tools:layout="@layout/fragment_c"
+        />
+
+</navigation>
