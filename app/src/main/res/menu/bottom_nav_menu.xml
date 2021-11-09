@@ -2,17 +2,17 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/HomeTapFragment"
-        android:title="home"
-        android:icon="@drawable/playingmococo"
-        />
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="홈" />
     <item
         android:id="@+id/BTapFragment"
-        android:title="B프래그먼트"
+        android:enabled="true"
         android:icon="@drawable/playingmococo"
-        />
+        android:title="B프래그먼트" />
     <item
-        android:id="@+id/CTapFragment"
-        android:title="C프래그먼트"
-        android:icon="@drawable/playingmococo"
-        />
+        android:id="@+id/ProfileTapFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_profile"
+        android:title="프로필" />
 </menu>

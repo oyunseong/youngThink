@@ -8,7 +8,7 @@
 
     <fragment
         android:id="@+id/HomeTapFragment"
-        android:name="com.youngthink.android.youngthink.HomeTapFragment"
+        android:name="com.youngthink.android.youngthink.ui.home.HomeTapFragment"
         android:label="@string/HomeTapFragment"
         tools:layout="@layout/fragment_home"
         />
@@ -21,10 +21,16 @@
         />
 
     <fragment
-        android:id="@+id/CTapFragment"
-        android:name="com.youngthink.android.youngthink.CTapFragment"
-        android:label="@string/CTapFragment"
-        tools:layout="@layout/fragment_c"
+        android:id="@+id/ProfileTapFragment"
+        android:name="com.youngthink.android.youngthink.ui.profile.ProfileTapFragment"
+        android:label="@string/ProfileTapFragment"
+        tools:layout="@layout/fragment_profile"
+        />
+    <fragment
+        android:id="@+id/PollDetailFragment"
+        android:name="com.youngthink.android.youngthink.ui.home.PollDetailFragment"
+        android:label="@string/PollDetailFragment"
+        tools:layout="@layout/fragment_detail_poll"
         />
 
 </navigation>

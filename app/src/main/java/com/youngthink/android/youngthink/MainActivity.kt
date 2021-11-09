@@ -41,7 +41,6 @@ class MainActivity : BaseActivity<ActivityMainBinding>({ ActivityMainBinding.inf
             }
         })
 
-
     }
 
     private fun initNavigation() {
@@ -52,7 +51,7 @@ class MainActivity : BaseActivity<ActivityMainBinding>({ ActivityMainBinding.inf
         navController.addOnDestinationChangedListener { _, destination, _ ->
             if (destination.id == R.id.HomeTapFragment ||
                 destination.id == R.id.BTapFragment ||
-                destination.id == R.id.CTapFragment
+                destination.id == R.id.ProfileTapFragment
             ) {
                 binding.mainBottomNavigation.visibility = View.VISIBLE
             } else {
@@ -60,4 +59,6 @@ class MainActivity : BaseActivity<ActivityMainBinding>({ ActivityMainBinding.inf
             }
         }
     }
+
+
 }
